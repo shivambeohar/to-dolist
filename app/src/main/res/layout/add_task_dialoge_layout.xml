@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:hint="@string/hint_set_time"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintTop_toBottomOf="@id/linear_layout"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:hint="@string/hint_set_date"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintTop_toBottomOf="@id/linear_layout"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/tv_new_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:hint="@string/hint_new_task"
+                android:inputType="text"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif"
+                android:hint="@string/hint_add_description"
+                android:inputType="text"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_get_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date"
+        android:layout_marginTop="20dp"
+        android:text="@string/txt_get_reminder"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/cb_reminder_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/tv_get_reminder"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_get_reminder"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_get_reminder"
+        android:text="@string/save"
+        android:textSize="20sp"
+        android:textColor="@color/colorBackground"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

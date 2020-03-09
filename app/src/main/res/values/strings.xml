@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">TO-DO List</string>
+    <string name="btn_get_started">Get Started</string>
+    <string name="txt_title_login">Login</string>
+    <string name="btn_login">Login</string>
+    <string name="snackbar_for_empty_fields">Empty Fields Not Allowed</string>
+    <string name="hint_email">Enter your Email</string>
+    <string name="hint_password">Enter Your password</string>
+    <string name="btn_create_account">Create Account</string>
+    <string name="txt_create_account">Create Account</string>
+    <string name="hint_enter_your_username">Enter Your Username</string>
+    <string name="menu_sign_out">Sign Out</string>
+    <string name="menu_about">About</string>
+    <string name="to_do_list">To-Do List</string>
+    <string name="save">save</string>
+    <string name="account_created_successfully">Account Created Successfully</string>
+    <string name="hint_set_time">Set Time</string>
+    <string name="hint_set_date">Set Date</string>
+    <string name="hint_add_description">Description</string>
+    <string name="hint_new_task">Title</string>
+    <string name="btn_add_comment">Add Comment</string>
+    <string name="fab_add_comment">Add Comment</string>
+    <string name="hint_add_your_comment">Add Your Comment</string>
+    <string name="txt_comment_section">Comment Section</string>
+    <string name="txt_new_task">New Task</string>
+    <string name="txt_task_description">Task Description</string>
+    <string name="txt_time">time</string>
+    <string name="txt_date">date</string>
+    <string name="title_activity_tempactivity">tempactivity</string>
+    <string name="txt_get_reminder">Get Reminder</string>
+</resources>
